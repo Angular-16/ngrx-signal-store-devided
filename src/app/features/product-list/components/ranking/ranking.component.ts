@@ -9,7 +9,5 @@ import { SharedModule } from '../../../../shared.module';
 })
 export class RankingComponent {
   readonly value = input.required<number>();
-
   readonly filled = computed(() => [1, 2, 3, 4, 5].map(i => i <= this.value()));
-
 }
